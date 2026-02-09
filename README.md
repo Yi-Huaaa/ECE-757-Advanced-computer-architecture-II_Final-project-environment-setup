@@ -77,9 +77,9 @@ We have provided a detailed step-by-step guide to downloading dependencies, buil
 
 ---
 
-### Useful Resources
+### :hammer_and_wrench: Useful Resources
 
-* **Docker:** [Docker 101 Tutorial (Video)](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3Dpg19Z8LL06w) - Great for understanding containers.
+* **Docker:** [you need to learn Docker RIGHT NOW!! // Docker Containers 101](https://www.youtube.com/watch?v=eGz9DS-aIeY)
 * **What is Docker in 5 minutes**[What is Docker in 5 minutes](https://www.youtube.com/watch?v=_dfLOzuIg2o&t=18s)
 * **gem5:** [Learning gem5 (Official Documentation)](https://www.gem5.org/documentation/gem5art/tutorials/parsec-tutorial)
 * **gem5 programming**[Learning gem5 ASPLOS tutorial](https://www.youtube.com/watch?v=wo4b9FPEiHk&list=PL-J9GXT0E7ALwbi339_AsbGvKbdIw52Vf)
