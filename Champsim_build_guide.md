@@ -2,7 +2,7 @@
 
 This guide details how to set up [ChampSim](https://github.com/ChampSim/ChampSim.git), download [PARSEC traces](https://mega.nz/folder/hp1wCRBI#TlHy4GKlEHW-Eyk4AfwBZA), and run simulations for the final project.
 
-## 1. Prerequisites & Installation (For linux)
+## 1. Prerequisites & Installation 
 Open your terminal and execute the following commands to set up the environment and install dependencies.
 
 ```bash
@@ -22,11 +22,7 @@ git submodule update --init
 ./vcpkg/vcpkg install
 ```
 
-<!-- 
-2. You can download maunally from **[Download Link (MEGA)](https://mega.nz/folder/hp1wCRBI#TlHy4GKlEHW-Eyk4AfwBZA)** and updload using `scp`. 
- -->
 
-```
 
 ## 2. Prepare Trace Files
 
@@ -230,4 +226,4 @@ make
 3. **Run Simulation**:
 Execute the `./bin/champsim --warmup-instructions 1000000 --simulation-instructions 10000000 trace_files/parsec_2.1.blackscholes.simlarge.prebuilt.drop_1750M.length_250M.champsimtrace.xz
 ` command again to see the new results. Also, every paramerters (e.g., --warmup-instructions) are adjustable. 
-```
+
