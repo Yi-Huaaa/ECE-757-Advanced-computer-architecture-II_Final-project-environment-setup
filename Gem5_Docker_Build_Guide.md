@@ -168,11 +168,10 @@ Warning: Couldn't find HDF5 C++ libraries. Disabling HDF5 support.
 root@d99eed69eff7:/workspace/gem5# 
 ```
 
-### Notes:
-1. scons：Gem5 不用 make，而是用這個叫做 SCons (基於 Python) 的建置工具。
-2. build/X86：我們告訴它：「請幫我造一個 X86 架構 的模擬器」。
-3. 如果你要跑 ARM 的 Benchmark，這裡就要改成 build/ARM。但為了教學通用性，我們先做 X86。
-4. it is possibly to take 20-40 mins. you can use `htop` to check whether it is working or not. 
+1. **scons**: Unlike projects that use `make`, gem5 uses a Python-based build tool called **SCons**.
+2. **build/X86**: This argument tells SCons to build a simulator specifically for the **X86 architecture**.
+3. **Architecture Selection**: If you need to run ARM benchmarks, you would change this to `build/ARM`. However, for this tutorial, we will use X86 for consistency.
+4. **Wait Time**: The compilation process typically takes **20-40 minutes**. You can run the `htop` command in another terminal to monitor the system and confirm the process is running.
 
 ### Quick Verification through (Hello World)
 Test if the compiled binary works correctly.
