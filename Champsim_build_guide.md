@@ -2,26 +2,52 @@
 
 This guide details how to set up [ChampSim](https://github.com/ChampSim/ChampSim.git), download [PARSEC traces](https://mega.nz/folder/hp1wCRBI#TlHy4GKlEHW-Eyk4AfwBZA), and run simulations for the final project.
 
-## 1. Prerequisites & Installation 
+## System Requirements (Read First)
+
+* **Linux Users (Recommended)**: Use the instructions below directly (Directly goto `ChampSim + PARSEC Installation Starts` section).
+* **Windows Users**: You **MUST** use **WSL (Windows Subsystem for Linux)**.
+    * Open PowerShell as Administrator and run `wsl --install`, then restart your computer.
+    * Once inside the WSL Ubuntu terminal, follow the **Linux** instructions below (Goto `ChampSim + PARSEC Installation Starts` section).
+* **macOS Users**: You need **Homebrew** installed. See the specific macOS commands in Section 1.
+
+
+## 0. Prerequisites & Installation
 Open your terminal and execute the following commands to set up the environment and install dependencies.
 
+### For Linux / Windows (WSL)
 ```bash
-# 1. Install necessary packages
-sudo apt update && sudo apt install -y build-essential git
+# Install necessary packages
+sudo apt update && sudo apt install -y build-essential git megatools
+```
+### For macOS
+```bash
+# Install Xcode Command Line Tools
+xcode-select --install
 
-# 2. Create workspace
+# Install dependencies via Homebrew
+brew install git megatools
+```
+
+--- 
+
+## ChampSim + PARSEC Installation Starts (For: Linux / Windows (WSL) / macOS)
+
+### 1. Setup ChampSim
+Run these commands for all operating systems (linux/windows/macOS):
+
+```bash
+# Create workspace
 mkdir -p ECE757_champsim_workspace && cd ECE757_champsim_workspace/
 
-# 3. Clone ChampSim repository
+# Clone ChampSim repository
 git clone https://github.com/ChampSim/ChampSim.git
 cd ChampSim
 
-# 4. Install ChampSim dependencies (vcpkg)
+# Install ChampSim dependencies (vcpkg)
 git submodule update --init
 ./vcpkg/bootstrap-vcpkg.sh
 ./vcpkg/vcpkg install
 ```
-
 
 
 ## 2. Prepare Trace Files
